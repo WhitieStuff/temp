@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo HTTP</title>
+  <link rel="shortcut icon" href="./static/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/index.js" defer></script>
+  <script src="js/http.js" defer></script>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__logo">
+      <img src="./static/favicon.png" alt="Logo" class="header__img">
+      <span class="header__title">DemoPage</span>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__links">
+        <li class="header__link-entry">
+          <a href="no_css" class="header__link">NoCSS</a>
+        </li>
+        <li class="header__link-entry">
+          <a href="http" class="header__link">HTTP</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sign-in">
+      <button class="header__button" id="signIn">Sign in</button>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <h1 class="main__title">Let's try some HTTP requests</h1>
+    <ul class="main__cats" id="cats"></ul>
+    <button class="main__button" id="catsAdd">Add a cat</button>
+    <form action="" class="main__form" id="catsForm">
+      <input type="text" name="id" id="id" placeholder="ID" class="main__form-input">
+      <input type="text" name="name" id="name" placeholder="Name" class="main__form-input">
+      <input type="text" name="lastname" id="lastname" placeholder="Lastname" class="main__form-input">
+      <input type="text" name="age" id="age" placeholder="Age" class="main__form-input">
+      <button class="main__button" id="catsSave">Save</button>
+    </form>
+    <p class="main__message" id="catsMessage">Saved!</p>
+  </main>
+</body>
+</html>
